@@ -1,0 +1,53 @@
+
+<?php
+$con=mysql_connect("localhost","root","");
+mysql_select_db("news",$con);
+if(isset($_POST['send']));
+{
+$firstname=$_POST['firstname'];
+$lastname=$_POST['lastname'];
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$idea=$_POST['idea'];
+if(empty($firstname))
+{
+		echo"<CENTER><FONT SIZE='5' COLOR='#C0C0C0'>Please enter firstname!</font></CENTER>";
+}
+
+elseif(empty($lastname))
+{
+	echo"<CENTER><FONT SIZE='5' COLOR='#C0C0C0'>Please enter lastname!</font></CENTER>";
+}
+
+	elseif(empty($email))
+{
+	echo"<CENTER><FONT SIZE='5' COLOR='#C0C0C0'>Please enter your email!</font></CENTER>";
+}
+		elseif(empty($phone))
+
+{
+	echo"<CENTER><FONT SIZE='5' COLOR='#C0C0C0'>Please enter your phone number!</font></CENTER>";
+
+}
+elseif(empty($idea))
+{
+	echo"<CENTER><FONT SIZE='5' COLOR='#C0C0C0'>Please select your idea!</font></CENTER>";
+}
+else
+	{
+	$inserts=mysql_query("INSERT INTO work VALUES('$firstname','$lastname', '$email', '$phone', '$idea')") or die (mysql_error());	
+if($inserts)
+		{
+ echo"<CENTER><FONT SIZE='5' COLOR='purple'>your message has been sent  </font></CENTER>";
+ echo"<CENTER><FONT SIZE='5' COLOR='purple'>Thank You for your idea </font></CENTER>";
+  echo"<FONT SIZE='6' COLOR='blue'><a href='index.html'>click here back to home </a> </font></br>";
+   echo"<FONT SIZE='6' COLOR='blue'><a href='book.html'>click here go to book online page </a> </font>";
+
+
+		
+		}
+		
+		}
+}
+ 
+?>

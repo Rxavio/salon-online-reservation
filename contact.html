@@ -1,0 +1,51 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>web work</title>
+<link href="table.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="fav.jpg" type="image/jpg"/>
+<script src="validation.js"></script>
+</head>
+<body bgcolor="pink" background="#"><center>
+<table class="firsttable"width="80%">
+<tr><td colspan="6"><img src="new.jpg" width="1100px" height="100px"></td></tr>
+<tr>
+<td width="100px"><a href="index.html">HOME</a></td><td><a href="about.html">ABOUT SALON</a></td><td><a href="nail.html">NAILS STYLE</a></td><td><a href="women.html"> HAIRSTYLES</a></td><td><a href="contact.html">CONTACT US</a></td><td><a href="book.html">BOOKING</a></td></tr>
+</table>
+
+<table class="container"width="83.5%">
+
+ <tr><td width="100px"><img src="13.jpg" width="490px" height="300px"><center>
+ <h3><u>Contact Information</h3></u><h3><i>kigali beauty center:<br>find us in cosmos/Nyamirambo<br>tel:0788209432/0728209432<br>Email:kigalibeauty45@gmail.com</h3></center></td>
+ <td width="600px">
+ <table id="toptable" ><tr>
+ <th colspan="2"><h3><strong>please fill all the field</strong></h3></th></tr>
+ <form action="idea.php" method="POST">
+<tr><td>FIRSTNAME:</td>
+<td><input type="text" name="firstname" placeholder="ex:ALPHONSINE" required="required" onKeyPress='return lettersAndSpaceOnly(event);'></td></tr>
+<tr><td>LASTNAME:</td>
+<td><input type="text" name="lastname"placeholder="ex:NYIRAMISIGARO" required="required" onKeyPress='return lettersAndSpaceOnly(event);'></td></tr>
+ <tr><td>
+ EMAIL:</td>
+ <td><input type="email" pattern="[^ @]*@[^ @]*[^ .com]*.com[^ .com]*"name="email"placeholder="ex:nyiralphonsine@gmail.com"/></td></tr>
+
+ <tr><td>
+ TEL NO:</td>
+ <td><input type="text" name="phone" placeholder="ex:078822334455 " required="required" onKeyPress='return NumbersAndPlusOnly(event);'></h3></td></tr>
+ <td>
+<h3>Send us your idea:</h3></td>
+ <td><textarea name="idea" rows="16" cols="50" placeholder="write your idea here!!" required="required"></textarea><br/>
+<input type="submit"name="submit"value="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset"name="reset"value="reset"></td>
+  </tr></table></td></tr> 
+  </table>
+  <table class="footer"width="83.5%">
+  <tr><th><h3>Copyright &copy;2018-2019 UR-CST</h3></th></tr>
+  </table>
+  
+
+</form>
+</center>
+</body>
+</html>
